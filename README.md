@@ -1,1 +1,1 @@
-![phoenic](./source/images/repo-logo-readme.svg){: .w-50}
+![phoenix](./source/images/repo-logo-readme.svg)
