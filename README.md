@@ -1,1 +1,1 @@
-![phoenix](./source/images/repo-logo-readme.svg)
+<img class="flex m-auto w-50" alt="phoenix" src="/tmobile/digital/tos/phoenix/phoenix-design-system/-/raw/tmo/main/source/images/repo-logo-readme.svg" loading="lazy">
