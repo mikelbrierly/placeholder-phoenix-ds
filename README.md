@@ -1,2 +1,1 @@
-# Phoenix Design System!
-![phoenic](./repo-logo-readme.svg){: .w-50}
+![phoenic](/repo-logo-readme.svg){: .w-50}
