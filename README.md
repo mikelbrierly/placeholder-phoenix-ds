@@ -1,2 +1,2 @@
 # Phoenix Design System!
-![phoenic](/repo-logo-readme.png =250x62)
+![phoenic](/repo-logo-readme.svg)
