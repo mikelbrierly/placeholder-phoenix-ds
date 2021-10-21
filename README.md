@@ -1,1 +1,1 @@
-<img class="flex m-auto w-50" alt="phoenix" src="./source/images/repo-logo-readme.svg" style="display: flex; margin: 0 auto; width: 50% !important;" loading="lazy">
+<img width="50%" alt="Phoenix Design System" src="./source/images/repo-logo-readme.svg">
