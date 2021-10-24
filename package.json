@@ -14,10 +14,21 @@
     "build:prod": "webpack -c webpack.prod.js",
     "format": "prettier --write ./",
     "format:check": "prettier --check ./",
-    "eslint": "eslint --ext ts src/",
-    "eslint:fix": "npm run eslint -- --fix",
-    "stylelint": "stylelint \"src/**/*.scss\" --syntax scss",
-    "stylelint:fix": "npm run stylelint -- --fix"
+    "lint:js": "eslint --ext ts src/",
+    "lint:js:fix": "npm run eslint -- --fix",
+    "lint:styles": "stylelint \"src/**/*.scss\" --syntax scss",
+    "lint:styles:fix": "npm run stylelint -- --fix"
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,json,scss}": [
+      "npm run format"
+    ],
+    "src/**/*.{js,ts}": [
+      "npm run lint:js"
+    ],
+    "src/**/*.scss": [
+      "npm run lint:styles"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
@@ -35,6 +46,8 @@
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-webpack-plugin": "^3.0.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.4",
     "mini-css-extract-plugin": "^2.4.2",
     "postcss-loader": "^6.2.0",
     "prettier": "^2.4.1",
