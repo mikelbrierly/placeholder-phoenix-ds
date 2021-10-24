@@ -1,0 +1,7 @@
+# https://browserslist.dev/?q=bGFzdCAyIG1ham9yIHZlcnNpb25zLCA%2BIDAuNSUsIGZpcmVmb3ggZXNyLCBub3QgZGVhZCwgbm90IGllIDEx
+
+last 2 major versions
+> 0.5%
+firefox esr
+not dead
+not ie 11

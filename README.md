@@ -1,1 +1,1 @@
-<img width="50%" alt="Phoenix Design System" src="./source/images/repo-logo-readme.svg">
+<img width="50%" alt="Phoenix Design System" src="./repo-logo-readme.svg">

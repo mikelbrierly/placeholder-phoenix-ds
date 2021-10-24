@@ -1,0 +1,13 @@
+parser: "@typescript-eslint/parser" # Specifies the ESLint parser
+extends:
+  - "eslint:recommended" # Uses the recommended rules from the eslint package
+  - "plugin:@typescript-eslint/recommended" # Uses the recommended rules from the @typescript-eslint/eslint-plugin package
+  - "prettier" # Makes eslint compatible with prettier
+parserOptions:
+  ecmaVersion: 2018 # Allows for the parsing of modern ECMAScript features
+  sourceType: module # Allows for the use of imports
+env:
+  browser: true # Provides browser globals to the linting context like window and document
+  node: true # Provides node globals to the linting context like process and path
+rules:
+  "@typescript-eslint/explicit-function-return-type": 0

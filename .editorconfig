@@ -1,0 +1,23 @@
+# Editor configuration, see http://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+max_line_length = 120
+trim_trailing_whitespace = true
+
+[**.{ts,js}]
+quote_type = single
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false
+
+[**.{yml,yaml}]
+# A high max_line_length is needed as prettier doesn't manage property-name
+# line-wrapping correctly:
+# See https://github.com/prettier/prettier/issues/5599
+max_line_length = 200

@@ -1,0 +1,24 @@
+extends:
+  - stylelint-config-recommended # Enables industry standard linting rules and configurations
+  - stylelint-config-prettier # Disables rules that are covered by prettier config
+plugins:
+  - stylelint-selector-bem-pattern
+rules:
+  # Not necessary if we stick with bem
+  no-descending-specificity: null
+
+  # Allow scss @rules
+  at-rule-no-unknown:
+    - true
+    - ignoreAtRules:
+        - function
+        - if
+        - each
+        - include
+        - mixin
+
+  # bem plugin
+  plugin/selector-bem-pattern:
+    preset: bem
+    presetOptions:
+      namespace: "tos"
