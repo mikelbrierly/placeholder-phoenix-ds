@@ -55,7 +55,7 @@ module.exports = {
       },
       {
         test: /\.twig$/,
-        use: ["twig-loader"]
+        use: ['twig-loader'],
       },
       {
         test: /\.mdx$/,
