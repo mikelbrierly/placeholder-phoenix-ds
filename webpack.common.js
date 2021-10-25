@@ -53,6 +53,15 @@ module.exports = {
           'sass-loader',
         ],
       },
+      {
+        test: /\.twig$/,
+        use: ["twig-loader"]
+      },
+      {
+        test: /\.mdx$/,
+        exclude: /node_modules/,
+        use: ['babel-loader', '@mdx-js/loader'],
+      },
     ],
   },
   plugins: [
