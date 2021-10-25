@@ -44,6 +44,7 @@
     "@storybook/builder-webpack5": "^6.3.12",
     "@storybook/html": "^6.3.12",
     "@storybook/manager-webpack5": "^6.3.12",
+    "@types/twig": "^1.12.6",
     "@typescript-eslint/eslint-plugin": "^5.1.0",
     "@typescript-eslint/parser": "^5.1.0",
     "autoprefixer": "^10.3.7",
@@ -74,7 +75,8 @@
     "webpack-cli": "^4.9.1",
     "webpack-fix-style-only-entries": "^0.6.1",
     "webpack-merge": "^5.8.0",
-    "webpack-stats-plugin": "^1.0.3"
+    "webpack-stats-plugin": "^1.0.3",
+    "@whitespace/storybook-addon-html": "^5.0.0"
   },
   "dependencies": {}
 }

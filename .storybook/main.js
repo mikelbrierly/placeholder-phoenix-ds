@@ -4,7 +4,7 @@ const webpack = require('../webpack.common.js');
 
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
-  addons: ['@storybook/addon-links', '@storybook/addon-essentials', '@storybook/addon-controls'],
+  addons: ['@storybook/addon-links', '@storybook/addon-essentials', '@storybook/addon-controls', '@whitespace/storybook-addon-html'],
   core: {
     builder: 'webpack5',
   },

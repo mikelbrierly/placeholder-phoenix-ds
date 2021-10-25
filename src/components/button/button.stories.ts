@@ -6,7 +6,7 @@ export default {
   title: 'Example/Button',
   // More on argTypes: https://storybook.js.org/docs/html/api/argtypes
   argTypes: {
-    label: { control: 'text' },
+    label: { control: 'text', required: true },
     primary: { control: 'boolean' },
     disabled: { control: 'boolean' },
     size: {
