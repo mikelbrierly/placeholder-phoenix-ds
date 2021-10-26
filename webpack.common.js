@@ -23,7 +23,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   resolve: {
-    extensions: ['.ts', '.scss'],
+    extensions: ['.ts', 'tsx', '.scss'],
   },
   module: {
     rules: [
@@ -31,6 +31,11 @@ module.exports = {
         test: /\.ts$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
+      },
+      {
+        test: /\.tsx$/,
+        exclude: /node_modules/,
+        use: ['ts-loader', 'babel-loader'],
       },
       {
         test: /\.scss$/,
@@ -52,10 +57,6 @@ module.exports = {
           },
           'sass-loader',
         ],
-      },
-      {
-        test: /\.twig$/,
-        use: ['twig-loader'],
       },
       {
         test: /\.mdx$/,

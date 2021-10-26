@@ -8,7 +8,8 @@
     "allowJs": false,
     "preserveConstEnums": true,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "jsx": "preserve"
   },
-  "include": ["./src/**/*.ts"]
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"]
 }
