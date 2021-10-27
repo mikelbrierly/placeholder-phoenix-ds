@@ -1,10 +1,14 @@
-import React from 'react'; // this is needed in .tsx files otherwise a reference to React throws an error
+import React from 'react';
 import { ButtonProps } from './button.interface';
+import './button.css';
+import classNames from 'classnames';
 
-export function Button(props: ButtonProps) {
+export const Button = (props: ButtonProps) => {
+  const buttonClass = classNames({ isPrimary: props.primary });
+
   return (
-    <button className={`${props.primary ? 'isPrimary' : ''} ${props.size}`} disabled={props.disabled}>
+    <button type="button" className={`${buttonClass} ${props.size}`} disabled={props.disabled} {...props}>
       {props.label}
     </button>
   );
-}
+};

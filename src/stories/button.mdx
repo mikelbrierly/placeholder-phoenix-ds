@@ -1,0 +1,24 @@
+## Custom documentation override
+
+Can be included like a component in a `.stories.tsx` file
+
+```tsx
+import CustomBtnDocs from './button.mdx';
+
+...
+
+  // parameters: {
+  //   docs: {
+  //     page: () => (
+  //       <>
+  //         <Title />
+          <CustomBtnDocs />
+  //         <Primary />
+  //         <ArgsTable story={PRIMARY_STORY} />
+  //       </>
+  //     ),
+  //   },
+  // },
+
+...
+```

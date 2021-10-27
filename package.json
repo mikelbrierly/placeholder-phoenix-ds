@@ -14,12 +14,13 @@
     "build:prod": "webpack -c webpack.prod.js",
     "format": "prettier --write ./",
     "format:check": "prettier --check ./",
-    "lint:js": "eslint --ext ts src/",
+    "lint:js": "eslint --ext tsx src/",
     "lint:js:fix": "npm run eslint -- --fix",
     "lint:styles": "stylelint \"src/**/*.scss\" --syntax scss",
     "lint:styles:fix": "npm run stylelint -- --fix",
     "storybook": "start-storybook -p 6006",
-    "storybook:build": "build-storybook"
+    "storybook:build": "build-storybook",
+    "build-storybook": "build-storybook"
   },
   "lint-staged": {
     "src/**/*.{js,ts,json,scss}": [
@@ -44,6 +45,7 @@
     "@storybook/builder-webpack5": "^6.3.12",
     "@storybook/html": "^6.3.12",
     "@storybook/manager-webpack5": "^6.3.12",
+    "@storybook/react": "^6.3.12",
     "@typescript-eslint/eslint-plugin": "^5.1.0",
     "@typescript-eslint/parser": "^5.1.0",
     "@whitespace/storybook-addon-html": "^5.0.0",
@@ -76,5 +78,8 @@
     "webpack-fix-style-only-entries": "^0.6.1",
     "webpack-merge": "^5.8.0",
     "webpack-stats-plugin": "^1.0.3"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1"
   }
 }

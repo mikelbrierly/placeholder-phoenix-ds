@@ -60,6 +60,7 @@ yarn.lock
 # Webpack
 build/
 dist/
+storybook-static/
 actions/common/
 
 # Frontend Maven Plugin
